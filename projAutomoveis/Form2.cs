@@ -16,5 +16,35 @@ namespace projAutomoveis
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtAno.Clear();
+            txtAuto.Clear();
+            txtCapCarga.Clear();
+            txtChassi.Clear();
+            txtCor.Clear();
+            txtModel.Clear();
+            txtMotor.Clear();
+            txtPeso.Clear();
+            txtPlaca.Clear();
+            txtTpCabine.Clear();
+            txtTpCarga.Clear();
+
+            txtModel.Focus();
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmmenu menu = new frmmenu();
+            this.Hide();
+            menu.Show();
+        }
     }
 }

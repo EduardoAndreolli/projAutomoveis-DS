@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace projAutomoveis
 {
-    public partial class Form1 : Form
+    public partial class frmmenu : Form
     {
-        public Form1()
+        public frmmenu()
         {
             InitializeComponent();
+        }
+
+        private void btncaminhao_Click(object sender, EventArgs e)
+        {
+            frmcaminhao caminhao = new frmcaminhao();
+            this.Hide();
+            caminhao.Show();
+
+        }
+
+        private void btncarro_Click(object sender, EventArgs e)
+        {
+            frmcarro carro = new frmcarro();
+            this.Hide();
+            carro.Show();
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\bin\Debug\projAutomoveis.exe.config
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\bin\Debug\projAutomoveis.exe
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\bin\Debug\projAutomoveis.pdb
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.csproj.SuggestedBindingRedirects.cache
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.frmmenu.resources
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.frmcaminhao.resources
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.frmcarro.resources
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.Properties.Resources.resources
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.csproj.GenerateResource.cache
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.exe
+C:\Users\andre\source\repos\projAutomoveis\projAutomoveis\obj\Debug\projAutomoveis.pdb
