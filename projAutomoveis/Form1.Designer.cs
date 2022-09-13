@@ -31,13 +31,14 @@
             this.btncaminhao = new System.Windows.Forms.Button();
             this.btncarro = new System.Windows.Forms.Button();
             this.lblcabecalho = new System.Windows.Forms.Label();
+            this.btnsair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncaminhao
             // 
             this.btncaminhao.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btncaminhao.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncaminhao.Location = new System.Drawing.Point(143, 475);
+            this.btncaminhao.Location = new System.Drawing.Point(64, 475);
             this.btncaminhao.Name = "btncaminhao";
             this.btncaminhao.Size = new System.Drawing.Size(321, 134);
             this.btncaminhao.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             this.btncarro.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btncarro.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
-            this.btncarro.Location = new System.Drawing.Point(856, 475);
+            this.btncarro.Location = new System.Drawing.Point(517, 474);
             this.btncarro.Name = "btncarro";
             this.btncarro.Size = new System.Drawing.Size(320, 134);
             this.btncarro.TabIndex = 1;
@@ -67,12 +68,25 @@
             this.lblcabecalho.TabIndex = 2;
             this.lblcabecalho.Text = "TOYFORD";
             // 
+            // btnsair
+            // 
+            this.btnsair.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnsair.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.btnsair.Location = new System.Drawing.Point(967, 475);
+            this.btnsair.Name = "btnsair";
+            this.btnsair.Size = new System.Drawing.Size(320, 133);
+            this.btnsair.TabIndex = 3;
+            this.btnsair.Text = "Sair";
+            this.btnsair.UseVisualStyleBackColor = false;
+            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
+            // 
             // frmmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1342, 741);
+            this.Controls.Add(this.btnsair);
             this.Controls.Add(this.lblcabecalho);
             this.Controls.Add(this.btncarro);
             this.Controls.Add(this.btncaminhao);
@@ -89,5 +103,6 @@
         private System.Windows.Forms.Button btncaminhao;
         private System.Windows.Forms.Button btncarro;
         private System.Windows.Forms.Label lblcabecalho;
+        private System.Windows.Forms.Button btnsair;
     }
 }

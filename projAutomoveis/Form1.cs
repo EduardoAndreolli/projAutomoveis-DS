@@ -31,5 +31,10 @@ namespace projAutomoveis
             this.Hide();
             carro.Show();
         }
+
+        private void btnsair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
