@@ -11,18 +11,18 @@ namespace projAutomoveis
     {
 
         private double capacidade_carga;
-        private bool bau;
+        private string bau;
         private string tipo_carga;
 
         public Caminhao()
         {
             capacidade_carga = 0;
             tipo_carga = null;
-            bau = false;
+            bau = null;
         }
 
         public Caminhao(string modelo, string placa, string cor, string tipo_carga, 
-        int ano, double capacidade_carga,  string chassi, bool bau)
+        int ano, double capacidade_carga,  string chassi,string bau)
         {
             this.Modelo = modelo;
             this.Placa = placa;
@@ -47,7 +47,7 @@ namespace projAutomoveis
             set { tipo_carga = value; }
         }
 
-        public bool Bau
+        public string Bau
         {
             get { return bau; }
             set { bau = value; }
@@ -55,15 +55,7 @@ namespace projAutomoveis
 
         public override string MostrarDados()
         {
-            string possuiBau = null;
-            if (this.Bau == true)
-            {
-                possuiBau = "Sim";
-            }
-            else if (this.Bau == false)
-            {
-                possuiBau = "Não";
-            }
+            
 
 
             string message = string.Empty;
@@ -74,7 +66,7 @@ namespace projAutomoveis
                                     "ANO: ", this.Ano, "\n",
                                     "CAPACIDADE DA BAGAGEM: ", this.Capacidade_carga, " LITROS", "\n",
                                     "CHASSI: ", this.Chassi, "\n",
-                                    "POSSUI BÁU? ", possuiBau, "\n"
+                                    "POSSUI BÁU? ", this.Bau, "\n"
                 );
 
             return message;

@@ -43,7 +43,7 @@ namespace projAutomoveis
         {
             
 
-            carro = new Carro(txtModel.Text, txtPlaca.Text, txtCor.Text, txtTpCarro.Text,(Convert.ToInt32(txtAno.Text)),
+            Carro = new carro(txtModel.Text, txtPlaca.Text, txtCor.Text, txtTpCarro.Text,(Convert.ToInt32(txtAno.Text)),
             (Convert.ToDouble(txtBagagem.Text)), (Convert.ToInt32(txtNumPorta.Text)), txtChassi.Text);
 
             txtAno.Clear();
