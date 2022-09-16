@@ -54,7 +54,7 @@
             // txtBau
             // 
             this.txtBau.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtBau.Location = new System.Drawing.Point(951, 286);
+            this.txtBau.Location = new System.Drawing.Point(957, 284);
             this.txtBau.Name = "txtBau";
             this.txtBau.Size = new System.Drawing.Size(260, 25);
             this.txtBau.TabIndex = 50;
@@ -62,8 +62,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(746, 292);
+            this.label2.Location = new System.Drawing.Point(677, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 19);
             this.label2.TabIndex = 49;
@@ -72,7 +73,7 @@
             // txtTpCarga
             // 
             this.txtTpCarga.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtTpCarga.Location = new System.Drawing.Point(951, 222);
+            this.txtTpCarga.Location = new System.Drawing.Point(957, 220);
             this.txtTpCarga.Name = "txtTpCarga";
             this.txtTpCarga.Size = new System.Drawing.Size(260, 25);
             this.txtTpCarga.TabIndex = 36;
@@ -80,7 +81,7 @@
             // txtCapCarga
             // 
             this.txtCapCarga.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtCapCarga.Location = new System.Drawing.Point(951, 163);
+            this.txtCapCarga.Location = new System.Drawing.Point(957, 161);
             this.txtCapCarga.Name = "txtCapCarga";
             this.txtCapCarga.Size = new System.Drawing.Size(260, 25);
             this.txtCapCarga.TabIndex = 35;
@@ -90,7 +91,7 @@
             this.label13.AutoSize = true;
             this.label13.Enabled = false;
             this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(742, 223);
+            this.label13.Location = new System.Drawing.Point(673, 222);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(122, 19);
             this.label13.TabIndex = 48;
@@ -101,7 +102,7 @@
             this.label10.AutoSize = true;
             this.label10.Enabled = false;
             this.label10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(742, 164);
+            this.label10.Location = new System.Drawing.Point(673, 163);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(179, 19);
             this.label10.TabIndex = 47;
@@ -139,6 +140,7 @@
             this.btnLimpar.TabIndex = 41;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnexibir
             // 

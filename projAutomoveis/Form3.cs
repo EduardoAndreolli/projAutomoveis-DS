@@ -14,11 +14,14 @@ namespace projAutomoveis
     public partial class frmcarro : Form
     {
 
-        Carro carro;
+        Carro carro; // definindo 'carro' como um objeto do tipo 'Carro'
+
         public frmcarro()
         {
             InitializeComponent();
         }
+
+        // Botão limpar definido 
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
@@ -30,7 +33,12 @@ namespace projAutomoveis
             txtPlaca.Clear();
             txtNumPorta.Clear();
             txtTpCarro.Clear();
+
+            txtModel.Focus();
+
         }
+
+        // Botão voltar definido
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
@@ -41,11 +49,12 @@ namespace projAutomoveis
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-            
 
-            Carro = new carro(txtModel.Text, txtPlaca.Text, txtCor.Text, txtTpCarro.Text,(Convert.ToInt32(txtAno.Text)),
+            // Instancionando o objeto 'carro' com os valores digitados nas txtBox do forms
+            carro = new Carro(txtModel.Text, txtPlaca.Text, txtCor.Text, txtTpCarro.Text,(Convert.ToInt32(txtAno.Text)),
             (Convert.ToDouble(txtBagagem.Text)), (Convert.ToInt32(txtNumPorta.Text)), txtChassi.Text);
 
+            // Limpando os campos 
             txtAno.Clear();
             txtBagagem.Clear();
             txtChassi.Clear();
@@ -55,12 +64,16 @@ namespace projAutomoveis
             txtNumPorta.Clear();
             txtTpCarro.Clear();
 
+            txtModel.Focus();
+
+            // Exibindo uma mensagem caso o caminhão seja cadastrado com sucesso
             MessageBox.Show("Carro cadastrado com sucesso.");
 
         }
 
         private void btnexibir_Click(object sender, EventArgs e)
         {
+            // Exibindo uma mensagem com os dados cadastrados
             MessageBox.Show(carro.MostrarDados());
         }
     }

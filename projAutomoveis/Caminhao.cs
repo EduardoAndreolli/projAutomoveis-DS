@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace projAutomoveis
 {
+    //Criação da Classe 'Caminhão' e definindo a herança da classe 'Veiculo'
+
     public class Caminhao : Veiculo
     {
 
@@ -14,12 +16,16 @@ namespace projAutomoveis
         private string bau;
         private string tipo_carga;
 
+        // Criação dos contrutores sem parâmetros
+
         public Caminhao()
         {
             capacidade_carga = 0;
             tipo_carga = null;
             bau = null;
         }
+
+        // Criação dos contrutores com parâmetros + os atributos herdados pelo classe 'Veiculo'
 
         public Caminhao(string modelo, string placa, string cor, string tipo_carga, 
         int ano, double capacidade_carga,  string chassi,string bau)
@@ -34,6 +40,8 @@ namespace projAutomoveis
             this.Bau = bau;
 
         }
+
+        // Propriedades e tipos dos atributos
 
         public double Capacidade_carga
         {
@@ -53,11 +61,10 @@ namespace projAutomoveis
             set { bau = value; }
         }
 
+        //Sobrescrevendo o método MostrarDados com os valores dos atributos concatenados no objeto 'message'
+
         public override string MostrarDados()
         {
-            
-
-
             string message = string.Empty;
             message = String.Concat("MODELO: ", this.Modelo, "\n",
                                     "PLACA: ", this.Placa, "\n",

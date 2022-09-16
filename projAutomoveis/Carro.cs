@@ -7,11 +7,16 @@ using System.Windows.Markup;
 
 namespace projAutomoveis
 {
+
+    //Criação da Classe 'Carro' e definindo a herança da classe 'Veiculo'
+
     public class Carro : Veiculo
     {
         private double capacid_bagagem;
         private int num_portas;
         private string tipo_carroceria;
+
+        // Criação dos contrutores sem parâmetros
 
         public Carro()
         {
@@ -20,6 +25,8 @@ namespace projAutomoveis
             tipo_carroceria = null;
         
         }
+
+        // Criação dos contrutores com parâmetros + os atributos herdados pelo classe 'Veiculo'
 
         public Carro(string modelo, string placa, string cor, string tipo_carroceria,
         int ano, double capacid_bagagem, int num_portas, string chassi)
@@ -35,6 +42,8 @@ namespace projAutomoveis
             this.Chassi = chassi;          
 
         }
+
+        // Propriedades e tipos dos atributos
 
         public double Capacid_bagagem
         {
@@ -53,6 +62,8 @@ namespace projAutomoveis
             get { return tipo_carroceria; }
             set { tipo_carroceria = value; }
         }
+
+        //Sobrescrevendo o método MostrarDados com os valores dos atributos concatenados no objeto 'message'
 
         public override string MostrarDados()
         {

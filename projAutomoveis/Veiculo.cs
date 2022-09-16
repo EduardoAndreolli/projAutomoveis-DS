@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace projAutomoveis
 {
+    // Criando a classe abstrata 'Veiculo'
     public abstract class Veiculo
     {
 
@@ -16,6 +17,7 @@ namespace projAutomoveis
         private string chassi;
         private int ano;
 
+        // Criação dos contrutores sem parâmetros
         public Veiculo()
         {
 
@@ -26,6 +28,8 @@ namespace projAutomoveis
             this.ano = 0;
 
         }
+
+        // Criação dos contrutores com parâmetros
 
         public Veiculo(string placa, string cor, string modelo,
         string chassi, int ano)
@@ -38,6 +42,8 @@ namespace projAutomoveis
             this.ano = ano; 
 
         }
+
+        // Propriedades e tipos dos atributos
 
         public string Placa
         {
@@ -69,6 +75,8 @@ namespace projAutomoveis
             get { return ano; }
             set { ano = value; }
         }
+
+        // Definição do método 'MostrarDados()' - > Classe String
 
         public abstract String MostrarDados();
 

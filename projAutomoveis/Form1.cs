@@ -17,6 +17,8 @@ namespace projAutomoveis
             InitializeComponent();
         }
 
+        // Definindo o botão que levará a tela 'caminhão'
+
         private void btncaminhao_Click(object sender, EventArgs e)
         {
             frmcaminhao caminhao = new frmcaminhao();
@@ -25,12 +27,16 @@ namespace projAutomoveis
 
         }
 
+        // Definindo o botão que levará a tela 'carro'
+
         private void btncarro_Click(object sender, EventArgs e)
         {
             frmcarro carro = new frmcarro();
             this.Hide();
             carro.Show();
         }
+
+        // Definindo o botão que fechará a aplicação
 
         private void btnsair_Click(object sender, EventArgs e)
         {
